@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>曹学伟 - 个人简历</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="resume">
+    <!-- Language Toggle Button -->
+    <div class="language-toggle">
+      <button id="languageBtn" class="lang-btn" title="Switch to English">
+        <span class="flag-icon">🇺🇸</span>
+        <span class="lang-text">EN</span>
+      </button>
+    </div>
+    
+    <!-- Header -->
+    <header class="header">
+      <div class="profile">
+        <img src="assets/img/avatar.png" alt="曹学伟" class="avatar">
+        <div class="info">
+          <h1 class="name">曹学伟</h1>
+          <p class="title"> </p>
+          <div class="contact">
+            <span>中国科学技术大学</span>
+            <span>•</span>
+            <span>caoxuewei@mail.ustc.edu.cn</span>
+            <span>•</span>
+            <span>男 | 2000.03</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="content">
+      
+      <!-- About -->
+      <section class="section">
+        <h2>关于我</h2>
+        <p class="about">
+          我是一名专注<strong>人工智能及其应用</strong>的博士生，就读于<strong>中国科学技术大学</strong>，
+          所学专业是<strong>智能科学与技术</strong>。我热衷于技术创新，期望在人工智能领域继续深入研究，创造更多价值。
+        </p>
+      </section>
+
+      <!-- Education -->
+      <section class="section">
+        <h2>教育背景</h2>
+        <div class="timeline">
+          <div class="item">
+            <div class="period">2025.09 - 2029.06</div>
+            <div class="details">
+              <h3>智能科学与技术 | 博士研究生</h3>
+              <p class="org">中国科学技术大学 </p>
+              <p class="desc">研究方向：三维感知、点云地理定位、扩散模型、多模态大模型等</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="period">2022.09 - 2025.06</div>
+            <div class="details">
+              <h3>模式识别与智能系统 | 硕士研究生</h3>
+              <p class="org">中国科学技术大学 | 985重点院校 (推免)</p>
+              <p class="desc">主修课程：矩阵代数，组合数学，计算机视觉，系统工程导论等</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="period">2018.09 - 2022.06</div>
+            <div class="details">
+              <h3>测控技术与仪器 | 学士</h3>
+              <p class="org">武汉理工大学 | 211工程院校</p>
+              <p class="desc">主修课程：嵌入式系统，计算机视觉，控制工程，测控仪器电子技术基础</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section class="section">
+        <h2>实习与项目经历</h2>
+        <div class="timeline">
+          <div class="item">
+            <div class="period">2023.12 - 2024.08</div>
+            <div class="details">
+              <h3>算法实习生</h3>
+              <p class="org">常州先进技术研究所</p>
+              <ul class="achievements">
+                <li>Ubuntu20.04操作系统下利用ROS系统部署深度强化学习（TD3）算法</li>
+                <li>引入长短时记忆（LSTM）组件，优化了传统TD3算法。实验结果表明，改进后显著提升了求解效率和准确性</li>
+                <li>结合3D点云信息在Gazebo环境中进行目标感知与探索</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="period">2024.01 - 2024.05</div>
+            <div class="details">
+              <h3>移动机器人对动态小目标行人的快速检测</h3>
+              <p class="org">项目负责人</p>
+              <ul class="achievements">
+                <li>针对YOLOv8存在Neck部分信息融合时效率低的问题，提出一种新的信息融合策略，同时引入Mixed local channel attention机制，实现了6%的Precison以及3%的mAP提升</li>
+                <li>通过Model Pruning与轻量化策略，使得模型在保持精度的前提下参数量下降约50%，实现在移动机器人平台对动态小目标行人的高精度检测</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="period">2024.05 - 2024.08</div>
+            <div class="details">
+              <h3>采用多尺度动态优化策略的单阶段物体6D位姿估计算法</h3>
+              <p class="org">项目负责人</p>
+              <ul class="achievements">
+                <li>针对位姿估计任务，通过多个尺度的动态优化策略使得改进后的检测器可以在不显著增加计算量的情况下，提高检测精度和速度，在ADD-S精度指标上，本文算法最大提升达到了10.259%</li>
+                <li>通过使用Dynamic Snake Convolution动态调整卷积核的形状和位置，从而更好地捕捉目标的特征，同时引入动态采样器(Dysample)技术，旨在通过学习来进行上采样，优化检测效果</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills & Awards Horizontal Layout -->
+      <div class="horizontal-section">
+        <!-- Skills -->
+        <section class="section">
+          <h2>专业技能</h2>
+          <div class="skills">
+            <div class="skills-container">
+              <div class="skill-group">
+                <strong>编程语言</strong>
+                <div class="skill-list">
+                  <span class="skill-tag">Python</span>
+                  <span class="skill-tag">C/C++</span>
+                  <span class="skill-tag">Java</span>
+                </div>
+              </div>
+              <div class="skill-group">
+                <strong>框架工具</strong>
+                <div class="skill-list">
+                  <span class="skill-tag">PyTorch</span>
+                  <span class="skill-tag">TensorFlow</span>
+                  <span class="skill-tag">ROS</span>
+                  <span class="skill-tag">Docker</span>
+                </div>
+              </div>
+              <div class="skill-group">
+                <strong>专业领域</strong>
+                <div class="skill-list">
+                  <span class="skill-tag">深度学习</span>
+                  <span class="skill-tag">计算机视觉</span>
+                  <span class="skill-tag">目标检测</span>
+                  <span class="skill-tag">6D位姿估计</span>
+                  <span class="skill-tag">强化学习</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Awards -->
+        <section class="section">
+          <h2>获奖荣誉</h2>
+          <div class="awards">
+            <div class="awards-container">
+              <div class="award">
+                <strong>中国科学技术大学校一等奖学金</strong>
+                <span class="date">2024.09</span>
+              </div>
+              <div class="award">
+                <strong>武汉理工大学校优秀毕业生</strong>
+                <span class="date">2022.06</span>
+              </div>
+              <div class="award">
+                <strong>中国机器人大赛国家一等奖</strong>
+                <span class="date">2021.12</span>
+              </div>
+              <div class="award">
+                <strong>节能减排竞赛国家三等奖</strong>
+                <span class="date">2021.08</span>
+              </div>
+              <div class="award">
+                <strong>工程训练竞赛省级二等奖</strong>
+                <span class="date">2021.04</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
