@@ -448,8 +448,11 @@ document.addEventListener('DOMContentLoaded', function () {
   // Language toggle functionality
   function initLanguageToggle() {
     const langBtn = document.getElementById('languageBtn');
+    if (!langBtn) return;
+    
     const flagIcon = langBtn.querySelector('.flag-icon');
     const langText = langBtn.querySelector('.lang-text');
+    if (!flagIcon || !langText) return;
     
     langBtn.addEventListener('click', function() {
       // Toggle language
